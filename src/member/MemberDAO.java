@@ -117,7 +117,7 @@ public class MemberDAO {
 
 		}finally {
 			try {				
-				if(rs != null) {pstmt.close();}
+				if(rs != null) {rs.close();}
 				if(pstmt != null) {pstmt.close();}
 				if(con != null) {con.close(); }
 			} catch (SQLException e) {
@@ -169,7 +169,7 @@ public class MemberDAO {
 			System.out.println("idCheck메소드 내부에서 예외발생 : " + e.toString());
 		}finally {
 			try {				
-				if(rs1 != null) {pstmt.close();}
+				if(rs1 != null) {rs1.close();}
 				if(pstmt != null) {pstmt.close();}
 				if(con != null) {con.close(); }
 			} catch (SQLException e) {

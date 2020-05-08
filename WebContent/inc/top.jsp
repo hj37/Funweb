@@ -11,8 +11,8 @@
 	if(id == null){	//세션값이 저장되어 있지 않는 경우
 %>
 		<div id="login">
-			<a href="member/login.jsp">login</a>
-			| <a href="member/join.jsp">join</a>
+			<a href="../member/login.jsp">login</a>
+			| <a href="../member/join.jsp">join</a>
 		</div>
 
 <% 
@@ -20,7 +20,7 @@
 %>
 		<div id="login">
 			<%=id %>님 로그인중...
-			<a href="member/logout.jsp">logout</a>
+			<a href="../member/logout.jsp">logout</a>
 		</div>
 <% 
 	}
